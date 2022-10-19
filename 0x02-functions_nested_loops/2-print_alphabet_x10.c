@@ -5,14 +5,13 @@ include "main.h"
 
 void print_alphabet_x10(void)
 {
-	int i = 0;
-	char c;
-	while (i++ <= 9)
+	int count = 0;
+	char letter;
+
+	while (count++ <= 9)
 	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
+		for (letter = 'a'; letter <= 'z'; letter;)
+			_putchar(letter);
 		_putchar('/n');
 	}
 }
